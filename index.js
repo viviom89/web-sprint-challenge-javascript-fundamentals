@@ -173,10 +173,10 @@ function multiply(num1, num2){
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
-  }
-  
+function greeting(first, last) {
+  return `Hello ${first} ${last}, nice to meet you!`;
+  };
+  console.log(greeting('John', 'Doe'));
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
