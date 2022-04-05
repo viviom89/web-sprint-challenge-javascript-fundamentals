@@ -85,10 +85,9 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(zooAnimals){
-    const lowerCase = [];
-    zooAnimals.map(function(zooAnimals) {
-      return lowerCase.push(zooAnimals.animal_name.toLowerCase());
-    })
+    const lowerCase = zooAnimals.map(function(zooAnimals) {
+      return zooAnimals.animal_name.toLowerCase();
+    });
     return lowerCase;
   };
   //console.log(lowerCaseNames(zooAnimals));
@@ -110,7 +109,7 @@ const zooAnimals = [
     })
     return lowPop;
   };
-  console.log(lowPopulationAnimals(zooAnimals));
+  //console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -121,10 +120,10 @@ const zooAnimals = [
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(zooAnimals){
+    const usaAnimals = zooAnimals.population.reduce();
   }
-  
+  //console.log(USApop(zooAnimals));
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
