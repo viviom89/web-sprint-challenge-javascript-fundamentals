@@ -137,13 +137,12 @@ const zooAnimals = [
   */
 
   function consume(a, b, cb) {
-   /* const healthyMeal = function() {
-      console.log(`I like to eat ${amount} fruits a day.`);
+  /*  const greeting = function() {
+      return `Hello, John Doe, nice to meet you!`;
     }
-    const amount = a + b;
-    return healthyMeal; */
+    return a + b;*/
   };
-  //console.log(consume(4, 5, healthyMeal));
+  //console.log(consume(2, 5, greeting));
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
@@ -176,7 +175,7 @@ function multiply(num1, num2){
 function greeting(first, last) {
   return `Hello ${first} ${last}, nice to meet you!`;
   };
-  console.log(greeting('John', 'Doe'));
+  //console.log(greeting('John', 'Doe'));
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -199,10 +198,11 @@ function greeting(first, last) {
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
-}
-
+function CuboidMaker(length, width, height){
+  this.length = length;
+  this.width = width;
+  this.height = height;
+};
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
