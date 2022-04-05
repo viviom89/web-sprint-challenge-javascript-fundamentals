@@ -125,7 +125,7 @@ const zooAnimals = [
     }, 0);
     return totalPop;
   };
-  console.log(USApop(zooAnimals));
+  //console.log(USApop(zooAnimals));
 
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
@@ -136,10 +136,14 @@ const zooAnimals = [
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
- 
+  function consume(a, b, cb) {
+   /* const healthyMeal = function() {
+      console.log(`I like to eat ${amount} fruits a day.`);
+    }
+    const amount = a + b;
+    return healthyMeal; */
+  };
+  //console.log(consume(4, 5, healthyMeal));
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
@@ -148,20 +152,20 @@ const zooAnimals = [
  2. Return the sum of those numbers
  */
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(num1, num2,) {
+    return num1 + num2;
   }
-
+//console.log(add(2, 5,));
 
 /* Use multiply to do the following:
 1. Receive two numbers as an argument that are passed in from its first and second parameters
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(num1, num2){
+   return num1 * num2;
   }
-
+  //console.log(multiply(2, 5));
 
  /* Use greeting to do the following:
 1. Receive two strings (a first name and last name) as an argument that are passed in from its first and second parameters
