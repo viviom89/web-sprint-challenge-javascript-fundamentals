@@ -105,10 +105,10 @@ const zooAnimals = [
       if (zooAnimals.population < 5) {
         return zooAnimals;
       }
-    })
+    });
     return lowPop;
   };
-  console.log(lowPopulationAnimals(zooAnimals));
+  //console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -120,10 +120,13 @@ const zooAnimals = [
   */
 
   function USApop(zooAnimals){
-    const usaAnimals = zooAnimals.population.reduce();
-  }
-  //console.log(USApop(zooAnimals));
-  
+    const totalPop = zooAnimals.reduce((acc, zooAnimals) => {
+      return acc + zooAnimals.population;
+    }, 0);
+    return totalPop;
+  };
+  console.log(USApop(zooAnimals));
+
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
   Use the higher-order function called consume to do the following:
