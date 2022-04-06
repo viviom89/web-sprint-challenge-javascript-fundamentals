@@ -25,15 +25,31 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    `.map` filters through an array and returns a new array. It is used to create a new array with changes. For example, changing a list of names to uppercase.
+
+    `.reduce` filters through an array and returns a single value. It is used to find a set of numbers in an array, and returns the total.
+
+    `.filter` filters through an array, but does not return a new array. It can be used to search for and meet a certain condition in an array such as finding a population below 5k.
 
 2. Explain the difference between a callback and a higher order function.
+    Higher order functions can contain other functions. Callback functions are passed into the higher order functions.
 
 3. Explain what a closure is.
+    A closure is a bundle of functions with references to its lexical environment.
 
 4. Describe the four principles of the 'this' keyword.
+    The four principles are window binding, implicit binding, explicit binding, and new binding.
+    - Window Binding - it's when 'this' is placed in the global scope without any context. It will return a global object or an undefined.
+
+    - Implicit Binding - 'this' refers to what is to the left of the dot when invoked. It applies to objects with methods.
+
+    - Explicit Binding - It is when 'this' is using `.call`, `.apply`, or `.bind` to invoke a function.
+
+    - New Binding - 'this' is bound to a new object when the function is invoked with a new keyword.
 
 5. Why do we need super() in an extended class?
-
+    super() will include all the Parent class attributes to the Child class attributes.
+    
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
