@@ -243,14 +243,19 @@ let cuboid = new CuboidMaker(4, 5, 5);
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
  
 class CuboidMakerTwo{
-  constructor(length, width, height) {
-    this.length = length;
-    this.width = width;
-    this.height = height;
+  constructor(attributes) {
+      this.length = attributes.length;
+      this.width = attributes.width;
+      this.height = attributes.height;
     }
-
-}
-
+      volume() {
+      return this.length * this.width * this.height;
+    };
+      surfaceArea() {
+      return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+    };
+};
+let cuboidTwo = new CuboidMakerTwo(4, 5, 5);
 
 
 
