@@ -198,10 +198,11 @@ function greeting(first, last) {
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(length, width, height){
-  this.length = length;
-  this.width = width;
-  this.height = height;
+function CuboidMaker(attributes) {
+  { this.length = attributes.length;
+    this.width = attributes.width;
+    this.height = attributes.height;
+  }
 };
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
@@ -227,7 +228,7 @@ CuboidMaker.prototype.surfaceArea = function() {
 /* 🐴🐴🐴 Step 4: Create a new object that uses CuboidMaker (not auto graded)🐴🐴🐴
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
-
+let cuboid = new CuboidMaker(4, 5, 5);
 
 
 
@@ -242,6 +243,11 @@ CuboidMaker.prototype.surfaceArea = function() {
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
  
 class CuboidMakerTwo{
+  constructor(length, width, height) {
+    this.length = length;
+    this.width = width;
+    this.height = height;
+    }
 
 }
 
