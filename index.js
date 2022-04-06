@@ -138,7 +138,7 @@ const zooAnimals = [
 
   function consume(a, b, cb) {
     //not sure how to return both numbers and string???
-    return `Hello ${a} ${b}, nice to meet you!`;
+    return `${cb(a, b)}`, cb(a, b);
   };
 
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
