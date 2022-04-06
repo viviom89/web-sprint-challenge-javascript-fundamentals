@@ -137,13 +137,10 @@ const zooAnimals = [
   */
 
   function consume(a, b, cb) {
-  /*  const greeting = function() {
-      return `Hello, John Doe, nice to meet you!`;
-    }
-    return a + b;*/
+    //not sure how to return both numbers and string???
+    return `Hello ${a} ${b}, nice to meet you!`;
   };
-  //console.log(consume(2, 5, greeting));
-  
+
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
  /*  Use add to do the following:
@@ -179,9 +176,9 @@ function greeting(first, last) {
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
